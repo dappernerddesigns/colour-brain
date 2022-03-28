@@ -1,0 +1,26 @@
+.q-card,
+.q-card-answer {
+	max-width: 250px;
+	min-height: 120px;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	-webkit-box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.57);
+	box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.57);
+	flex-direction: column;
+}
+
+.q-card-answer {
+	flex-direction: row;
+}
+.answers {
+	width: 30px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin: 6px;
+}

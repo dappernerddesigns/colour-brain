@@ -1,0 +1,26 @@
+body {
+	margin: 20px;
+}
+
+.playArea {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 15px;
+}
+
+.cardInPlay {
+	width: 100px;
+	height: 130px;
+	margin: 12px;
+	background-color: aliceblue;
+	border-radius: 10px;
+	-webkit-box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.57);
+	box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.57);
+}
+
+.prompt {
+	text-align: center;
+	font-size: 1.2rem;
+}
