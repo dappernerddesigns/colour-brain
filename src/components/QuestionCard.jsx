@@ -20,12 +20,9 @@ export const QuestionCard = ({
 	}, [turn]);
 
 	const resolveTurn = (check) => {
-		console.log(check);
 		if (check === true) {
-			console.log('yay you got it right');
 			setScore((currScore) => currScore + 1);
 		} else {
-			console.log('oh no you got it wrong');
 			setLives((currLives) => currLives - 1);
 		}
 	};

@@ -17,19 +17,22 @@ export const Table = () => {
 
 	return (
 		<div>
-			<h2>Lives: {lives}</h2>
-			<h2>Score: {score}</h2>
 			{lives === 0 ? (
 				<GameOver score={score} />
 			) : (
 				<>
+					<h2>Lives: {lives}</h2>
+					<h2>Score: {score}</h2>
 					<QuestionCard
 						setPlayedCards={setPlayedCards}
 						playerCards={playerCards}
 						setScore={setScore}
 						setLives={setLives}
 					/>
-					<PlayArea playerCards={playerCards} />
+					<PlayArea
+						playerCards={playerCards}
+						setPlayedCards={setPlayedCards}
+					/>
 					<Hand playedCards={playedCards} />
 				</>
 			)}

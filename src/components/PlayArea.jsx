@@ -1,4 +1,10 @@
-export const PlayArea = ({ playerCards }) => {
+export const PlayArea = ({ playerCards, setPlayedCards }) => {
+	const removeCard = (event) => {
+		let cardInPlay = event.target.id;
+		const newCards = playerCards.filter((card) => card !== cardInPlay);
+		setPlayedCards(newCards);
+	};
+
 	return (
 		<div>
 			{playerCards.length === 0 ? (
@@ -11,6 +17,7 @@ export const PlayArea = ({ playerCards }) => {
 						{playerCards.map((cards) => {
 							return (
 								<div
+									onClick={removeCard}
 									key={cards}
 									className='cardInPlay'
 									id={cards}></div>
