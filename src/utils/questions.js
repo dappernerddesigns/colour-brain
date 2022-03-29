@@ -87,6 +87,71 @@ const questions = [
 		question: 'Bugs Bunny',
 		answer: ['Grey', 'White'],
 	},
+	{
+		question: 'Clown fish',
+		answer: ['Orange', 'White'],
+	},
+	{
+		question: 'JCB',
+		answer: ['Yellow'],
+	},
+	{
+		question: 'Suit that astronauts wear in the cockpit',
+		answer: ['Orange'],
+	},
+	{
+		question: 'Subway Logo',
+		answer: ['Green', 'Yellow', 'White'],
+	},
+	{
+		question: 'Colour of Smarties in a traditional tube',
+		answer: [
+			'Brown',
+			'Pink',
+			'Red',
+			'Orange',
+			'Yellow',
+			'Green',
+			'Blue',
+			'Purple',
+		],
+	},
+	{
+		question: 'Famous dye from the ancient world: Tyrian ___',
+		answer: ['Purple'],
+	},
+	{
+		question: 'A period of exceptional success or good luck',
+		answer: ['Purple'],
+	},
+	{
+		question: 'Rosa in Spanish and Italian',
+		answer: ['Pink'],
+	},
+	{
+		question: 'Hotwheels logo',
+		answer: ['Red', 'Yellow'],
+	},
+	{
+		question: 'Tik Tok app logo',
+		answer: ['Black', 'White', 'Blue', 'Red'],
+	},
+	{
+		question: 'Luxury chocolate makers',
+		answer: ['Green', 'Black'],
+	},
+	{
+		question: 'Strawberry Split ice lolly (without the stick)',
+		answer: ['Red', 'Yellow'],
+	},
+	{
+		question: 'Pepsi logo',
+		answer: ['Red', 'White', 'Blue'],
+	},
+	{
+		question: 'Lego logo',
+		answer: ['Black', 'White', 'Yellow', 'Red'],
+	},
 ];
 
 const questionGenerator = (questions) => {

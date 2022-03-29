@@ -7,12 +7,30 @@ import { GameOver } from './GameOver';
 
 export const Table = () => {
 	const [playerCards, setPlayedCards] = useState([]);
+
 	const [lives, setLives] = useState(3);
 	const [score, setScore] = useState(0);
+	const [hand, setHand] = useState([
+		'Red',
+		'Orange',
+		'Yellow',
+		'Green',
+		'Blue',
+		'Purple',
+		'Pink',
+		'Brown',
+		'Black',
+		'Grey',
+		'White',
+	]);
+
 	function playedCards(event) {
 		setPlayedCards((currCards) => {
 			return [event.target.id, ...currCards];
 		});
+		let chosenCard = event.target.id;
+		const newHand = hand.filter((card) => card !== chosenCard);
+		setHand(newHand);
 	}
 
 	return (
@@ -28,12 +46,13 @@ export const Table = () => {
 						playerCards={playerCards}
 						setScore={setScore}
 						setLives={setLives}
+						setHand={setHand}
 					/>
 					<PlayArea
 						playerCards={playerCards}
 						setPlayedCards={setPlayedCards}
 					/>
-					<Hand playedCards={playedCards} />
+					<Hand playedCards={playedCards} hand={hand} />
 				</>
 			)}
 		</div>

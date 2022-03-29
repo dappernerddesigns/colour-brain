@@ -8,7 +8,7 @@ export const GameOver = ({ score }) => {
 		<div className='container'>
 			<h1 className='mainH1'>Game Over!</h1>
 			<h2 className='score'>Your score was {score}</h2>
-			<button className='start' onClick={restart}>
+			<button className='restart' onClick={restart}>
 				Restart
 			</button>
 		</div>

@@ -7,10 +7,12 @@ export const QuestionCard = ({
 	playerCards,
 	setScore,
 	setLives,
+	setHand,
 }) => {
 	const [challenge, setChallenge] = useState();
 	const [isLoading, setIsLoading] = useState(true);
 	const [showAnswer, setShowAnswer] = useState(false);
+	const [message, setMessage] = useState('');
 	const [turn, setTurn] = useState(true);
 
 	useEffect(() => {
@@ -22,7 +24,9 @@ export const QuestionCard = ({
 	const resolveTurn = (check) => {
 		if (check === true) {
 			setScore((currScore) => currScore + 1);
+			setMessage('Correct!');
 		} else {
+			setMessage('Oh no! You loose a life');
 			setLives((currLives) => currLives - 1);
 		}
 	};
@@ -33,15 +37,29 @@ export const QuestionCard = ({
 	}
 
 	function newQuestion() {
+		setMessage('');
 		setShowAnswer(false);
 		setTurn(false);
 		setPlayedCards([]);
+		setHand([
+			'Red',
+			'Orange',
+			'Yellow',
+			'Green',
+			'Blue',
+			'Purple',
+			'Pink',
+			'Brown',
+			'Black',
+			'Grey',
+			'White',
+		]);
 		const quCard = questionGenerator(questions);
 		setChallenge(quCard);
 	}
 
 	return (
-		<>
+		<div className='cardContainer'>
 			{isLoading ? (
 				<p>Loading...</p>
 			) : (
@@ -58,8 +76,13 @@ export const QuestionCard = ({
 									);
 								})}
 							</div>
+							<h3>{message}</h3>
 
-							<button onClick={newQuestion}>Next Question</button>
+							<button
+								className='tableButton'
+								onClick={newQuestion}>
+								Next Question
+							</button>
 						</>
 					) : (
 						<>
@@ -69,12 +92,16 @@ export const QuestionCard = ({
 								<p>{challenge.answer.length} colour(s)</p>
 							</div>
 							{playerCards.length === challenge.answer.length ? (
-								<button onClick={handleClick}>Submit</button>
+								<button
+									className='tableButton'
+									onClick={handleClick}>
+									Submit
+								</button>
 							) : null}
 						</>
 					)}
 				</>
 			)}
-		</>
+		</div>
 	);
 };
