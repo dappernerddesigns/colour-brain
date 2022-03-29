@@ -1,8 +1,11 @@
-export const PlayArea = ({ playerCards, setPlayedCards }) => {
+export const PlayArea = ({ playerCards, setPlayedCards, setHand }) => {
 	const removeCard = (event) => {
 		let cardInPlay = event.target.id;
 		const newCards = playerCards.filter((card) => card !== cardInPlay);
 		setPlayedCards(newCards);
+		setHand((currCards) => {
+			return [cardInPlay, ...currCards];
+		});
 	};
 
 	return (

@@ -2,7 +2,7 @@
 
 A modest browser based version of the brilliant card game Colour-Brain.
 
-1 player, 3 lives, 10 colours. Have at it. Host version available here: (link inbound)
+1 player, 3 lives, 10 colours. Have at it. Host version available here: https://colour-brain-browser.netlify.app/
 
 ## How to play
 

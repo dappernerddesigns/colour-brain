@@ -51,6 +51,7 @@ export const Table = () => {
 					<PlayArea
 						playerCards={playerCards}
 						setPlayedCards={setPlayedCards}
+						setHand={setHand}
 					/>
 					<Hand playedCards={playedCards} hand={hand} />
 				</>
