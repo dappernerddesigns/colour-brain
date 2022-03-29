@@ -9,7 +9,7 @@ export const PlayArea = ({ playerCards, setPlayedCards, setHand }) => {
 	};
 
 	return (
-		<div>
+		<div className='playContainer'>
 			{playerCards.length === 0 ? (
 				<h1 className='prompt'>Play a card!</h1>
 			) : null}

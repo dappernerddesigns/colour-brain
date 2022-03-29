@@ -15,6 +15,10 @@
 	border-radius: 10px;
 	-webkit-box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.57);
 	box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.57);
+	cursor: pointer;
+}
+.card:hover {
+	transform: scale(1.1);
 }
 .colour-text {
 	font-size: 1.2rem;

@@ -17,9 +17,18 @@ export const Start = ({ setStart }) => {
 	return (
 		<div className='tutorial'>
 			{isVisible ? null : (
-				<h3 className='prompt'>
-					New players check the tutorial below for instructions
-				</h3>
+				<div className='prompt'>
+					<h3>
+						New players check the tutorial below for instructions
+					</h3>
+					<p>
+						Colour Brain is a brilliantly simple card game from Big
+						Potato Games, you can find their game at many reputable
+						stores. This app is a small project purely for fun. If
+						you enjoy playing it please consider purchasing the card
+						game for two player or team fun.
+					</p>
+				</div>
 			)}
 			{isVisible ? (
 				<>

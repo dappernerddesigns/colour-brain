@@ -76,7 +76,7 @@ export const QuestionCard = ({
 									);
 								})}
 							</div>
-							<h3>{message}</h3>
+							<h3 className='message'>{message}</h3>
 
 							<button
 								className='tableButton'
