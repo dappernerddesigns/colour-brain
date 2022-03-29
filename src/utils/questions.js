@@ -161,7 +161,7 @@ const questions = [
 		answer: ['Black'],
 	},
 	{
-		question: `Coats worn by Ponin's in-house entertainers`,
+		question: `Coats worn by Pontin's in-house entertainers`,
 		answer: ['Blue'],
 	},
 	{
