@@ -152,6 +152,86 @@ const questions = [
 		question: 'Lego logo',
 		answer: ['Black', 'White', 'Yellow', 'Red'],
 	},
+	{
+		question: 'Welsh mountains that spread across Powys and Monmouthshire',
+		answer: ['Black'],
+	},
+	{
+		question: `Dick Turpin's horse`,
+		answer: ['Black'],
+	},
+	{
+		question: `Coats worn by Ponin's in-house entertainers`,
+		answer: ['Blue'],
+	},
+	{
+		question: 'Room where actors rest before performances',
+		answer: ['Green'],
+	},
+	{
+		question: 'Golden Gate Bridge',
+		answer: ['Orange'],
+	},
+	{
+		question: 'The Creeper in Minecraft',
+		answer: ['Black', 'Green'],
+	},
+	{
+		question: 'A goldfish if left in the dark for too long',
+		answer: ['White'],
+	},
+	{
+		question: 'The most common colour of Lego brick of the last 5 years',
+		answer: ['Grey'],
+	},
+	{
+		question: '20-Euro Note',
+		answer: ['Blue'],
+	},
+	{
+		question: 'Snapchat logo',
+		answer: ['Yellow', 'White', 'Black'],
+	},
+	{
+		question: 'According to research, colours that make people feel hungry',
+		answer: ['Red', 'Yellow'],
+	},
+	{
+		question: 'Original Playstation 1',
+		answer: ['Grey'],
+	},
+	{
+		question: 'Real Madrid home shirt',
+		answer: ['Purple', 'White'],
+	},
+	{
+		question: 'Flag of South Korea',
+		answer: ['Red', 'White', 'Blue', 'Black'],
+	},
+	{
+		question: 'Baby Zebra stripes',
+		answer: ['White', 'Brown'],
+	},
+	{
+		question: 'Litmus paper when dipped in alkali',
+		answer: ['Blue'],
+	},
+	{
+		question: 'DeWALT power tools',
+		answer: ['Yellow', 'Black'],
+	},
+	{
+		question: 'Most common colours of bell pepper',
+		answer: ['Red', 'Yellow', 'Orange', 'Green'],
+	},
+	{
+		question: 'Flag waved in motor racing indicating danger ahead',
+		answer: ['Yellow'],
+	},
+	{
+		question: 'London Underground District Line',
+		answer: ['Green'],
+	},
 ];
 
 const questionGenerator = (questions) => {
