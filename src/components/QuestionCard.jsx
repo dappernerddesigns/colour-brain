@@ -15,8 +15,8 @@ export const QuestionCard = ({
 	const [message, setMessage] = useState('');
 	const [turn, setTurn] = useState(true);
 
+	const quCard = questionGenerator(questions);
 	useEffect(() => {
-		const quCard = questionGenerator(questions);
 		setChallenge(quCard);
 		setIsLoading(false);
 	}, [turn]);
