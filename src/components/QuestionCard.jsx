@@ -17,6 +17,7 @@ export const QuestionCard = ({
 
 	useEffect(() => {
 		const quCard = questionGenerator(questions);
+		console.log(quCard.id);
 		setChallenge(quCard);
 		setIsLoading(false);
 	}, [turn]);
