@@ -21,25 +21,10 @@ export const QuestionCard = ({
 		setIsLoading(false);
 	}, [turn]);
 
-	const resolveTurn = (check) => {
-		if (check === true) {
-			setScore((currScore) => currScore + 1);
-			setMessage('Correct!');
-		} else {
-			setMessage('Oh no! You loose a life');
-			setLives((currLives) => currLives - 1);
-		}
-	};
-	function handleClick() {
-		setShowAnswer(true);
-		let resolve = answerCheck(challenge, playerCards);
-		resolveTurn(resolve);
-	}
-
 	function newQuestion() {
 		setMessage('');
 		setShowAnswer(false);
-		setTurn(false);
+		setTurn(!turn);
 		setPlayedCards([]);
 		setHand([
 			'Red',
@@ -54,8 +39,21 @@ export const QuestionCard = ({
 			'Grey',
 			'White',
 		]);
-		const quCard = questionGenerator(questions);
-		setChallenge(quCard);
+	}
+
+	const resolveTurn = (check) => {
+		if (check === true) {
+			setScore((currScore) => currScore + 1);
+			setMessage('Correct!');
+		} else {
+			setMessage('Oh no! You loose a life');
+			setLives((currLives) => currLives - 1);
+		}
+	};
+	function handleClick() {
+		setShowAnswer(true);
+		let resolve = answerCheck(challenge, playerCards);
+		resolveTurn(resolve);
 	}
 
 	return (
